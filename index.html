@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Fun Quiz</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f9;
+            background-color: #f0f8ff;
             color: #333;
         }
-        h1 {
-            color: #2e86de;
-        }
-        p {
+        .quiz-container {
             max-width: 600px;
             margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #ffffff;
         }
-        .profile-img {
-            border-radius: 50%;
-            width: 150px;
+        .question {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .options button {
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 1em;
+            background-color: #2e86de;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .options button:hover {
+            background-color: #3a98f2;
+        }
+        #score {
+            font-size: 1.2em;
             margin-top: 20px;
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
-    <h1>Hello, I'm [Paakhi Prabhakar]</h1>
-    <img src="https://via.placeholder.com/150" alt="Profile picture" class="profile-img">
-    <p>
-        Welcome to my personal website! I’m excited to share a bit about myself.
-        I’m passionate about Dance, Puzzels and Watching YouTube. 
-        Feel free to connect with me!
-    </p>
+    <div class="quiz-container">
+        <h1>Fun Quiz</h1>
+        <div id="quiz"></div>
+        <p id="score" style="display: none;"></p>
+        <button id="next-question" style="display: none;">Next Question</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
